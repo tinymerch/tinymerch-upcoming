@@ -43,7 +43,7 @@ h1 {
 
 p {
   margin: 0;
-  font-size: 18px;
+  font-size: 19px;
   letter-spacing: 0.1px;
   line-height: 29px;
   margin-bottom: 10px;
@@ -53,18 +53,22 @@ p {
   display: flex;
   width: 100%;
   margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 120px;
 }
 
 .content {
   margin: 0 auto;
-  width: 50%;
-  max-width: 750px;
+  width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.content p {
+  width: 50%;
+  max-width: 750px;
 }
 
 .MailChimp_Form {
@@ -75,7 +79,7 @@ p {
 }
 
 @media (max-width: 900px) {
-  .content {
+  .content p {
     width: 65%;
   }
 
@@ -85,8 +89,12 @@ p {
 }
 
 @media (max-width: 768px) {
-  .content {
+  .content p {
     width: 80%;
+  }
+
+  .content h1{
+    width: 90%;
   }
 
   h1 {
@@ -104,12 +112,20 @@ p {
     background-image: none;
   }
 
-  .content {
-    width: 90%;
+  .container {
+    margin-top: 40px;
+  }
+
+  .content p {
+    width: 80%;
+  }
+
+  .content h1 {
+    width: 80%;
   }
 
   h1 {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 28px;
   }
   p {
