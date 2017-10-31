@@ -134,12 +134,51 @@ p {
   }
 }
 
-#mc_embed_signup {background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;}
-#mc-field-group {display: flex; width: 100%;}
-#mc_embed_signup_scroll {display: flex;}
-#mce-EMAIL {position: relative; padding-left: 20px; background-color: #F2F2F7; left: 60px; height: 55px; width: 420px; border-radius: 28px; border: none; font-size: 20px; font-weight: 700; color: rgba(90,88,94,1); letter-spacing: 0.5px; }
-#mc-embedded-subscribe {position: relative; background-color: #6079F2; height: 55px; width: 140px; right:60px; border-radius: 28px; border: none; font-size: 20px; font-weight: 700; color: white; letter-spacing: 0.5px; transition: 200ms ease all;}
-#mc-embedded-subscribe:hover {background-color: #273DA9; transform: translateX(-20px);}
+#mc_embed_signup {
+  background:#fff;
+  clear: left;
+  font: 14px Helvetica,Arial,sans-serif;
+}
+#mc-field-group {
+  display: flex;
+  width: 100%;
+}
+#mc_embed_signup_scroll {
+  display: flex;
+}
+#mce-EMAIL.required-email{
+  position: relative;
+  padding-left: 20px;
+  background-color: #F2F2F7;
+  left: 60px;
+  height: 55px;
+  width: 420px;
+  border-radius: 28px;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(90,88,94,1);
+  letter-spacing: 0.5px;
+}
+#mc-embedded-subscribe.button {
+  position: relative;
+  background-color: #6079F2;
+  height: 55px;
+  width: 140px;
+  right:60px;
+  border-radius: 28px;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.5px;
+  transition: 200ms ease all;
+}
+#mc-embedded-subscribe.button:hover {
+  background-color: #273DA9;
+  transform: translateX(-20px);
+}
+
 ::-webkit-input-placeholder {
     color: rgba(90,88,94,.4)
   }
@@ -151,7 +190,17 @@ p {
   }
 
   @media (max-width: 480px) {
-    #mce-EMAIL {position: relative; padding-left: 20px; background-color: #F2F2F7; left: 50px; height: 45px; width: 300px; border-radius: 28px; border: none; font-size: 16px; font-weight: 700; color: rgba(90,88,94,1); letter-spacing: 0.2px; }
-    #mc-embedded-subscribe {position: relative; background-color: #6079F2; height: 45px; width: 120px; right:50px; border-radius: 28px; border: none; font-size: 16px; font-weight: 700; color: white; letter-spacing: 0.2px; transition: 200ms ease all;}
-    #mc-embedded-subscribe:hover {background-color: #273DA9; transform: translateX(-20px);}
+    #mce-EMAIL.required-email{
+      left: 50px;
+      height: 45px;
+      width: 300px;
+      font-size: 16px;
+    }
+
+    #mc-embedded-subscribe.button{
+      height: 45px;
+      width: 120px;
+      right:50px;
+      font-size: 16px;
+    }
   }
