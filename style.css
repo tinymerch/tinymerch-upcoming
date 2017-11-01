@@ -43,9 +43,9 @@ h1 {
 
 p {
   margin: 0;
-  font-size: 19px;
+  font-size: 18px;
   letter-spacing: 0.1px;
-  line-height: 29px;
+  line-height: 26px;
   margin-bottom: 10px;
 }
 
@@ -53,7 +53,8 @@ p {
   display: flex;
   width: 100%;
   margin: 0 auto;
-  margin-top: 120px;
+  margin-top: 10vh;
+  margin-bottom: 15vh;
 }
 
 .content {
@@ -79,6 +80,11 @@ p {
 }
 
 @media (max-width: 900px) {
+  h1 {
+    font-size: 34px;
+    line-height: 38px;
+  }
+
   .content p {
     width: 65%;
   }
@@ -117,16 +123,16 @@ p {
   }
 
   .content p {
-    width: 80%;
+    width: 75%;
   }
 
   .content h1 {
-    width: 80%;
+    width: 75%;
   }
 
   h1 {
     font-size: 22px;
-    line-height: 28px;
+    line-height: 26px;
   }
   p {
     font-size: 14px;
@@ -137,7 +143,8 @@ p {
 #mc_embed_signup {
   background:#fff;
   clear: left;
-  font: 14px Helvetica,Arial,sans-serif;
+  font: 12px Helvetica,Arial,sans-serif;
+  margin-bottom: 30px;
 }
 #mc-field-group {
   display: flex;
@@ -155,6 +162,7 @@ p {
   width: 420px;
   border-radius: 28px;
   border: none;
+  outline: none;
   font-size: 20px;
   font-weight: 700;
   color: rgba(90,88,94,1);
@@ -189,6 +197,26 @@ p {
     color: rgba(90,88,94,.4)
   }
 
+#mce-responses.clear {
+  position: absolute;
+  /* margin: 0 auto; */
+  width: 50%;
+  margin-top: 70px;
+  left: 25%;
+}
+
+  @@media (max-width: 780px) {
+    #mce-responses.clear {
+      margin-top: 50px;
+      width: 70%;
+      left: 15%;
+    }
+    #mc_embed_signup {
+      font: 11px Helvetica,Arial,sans-serif;
+      margin-bottom: 20px;
+    }
+  }
+
   @media (max-width: 480px) {
     #mce-EMAIL.required-email{
       left: 50px;
@@ -202,5 +230,14 @@ p {
       width: 120px;
       right:50px;
       font-size: 16px;
+    }
+    #mce-responses.clear {
+      margin-top: 50px;
+      width: 80%;
+      left: 10%;
+    }
+    #mc_embed_signup {
+      font: 11px Helvetica,Arial,sans-serif;
+      margin-bottom: 20px;
     }
   }
