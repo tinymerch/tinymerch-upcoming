@@ -208,12 +208,12 @@ p {
   @@media (max-width: 780px) {
     #mce-responses.clear {
       margin-top: 50px;
-      width: 70%;
-      left: 15%;
+      width: 80%;
+      left: 10%;
     }
     #mc_embed_signup {
       font: 11px Helvetica,Arial,sans-serif;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
   }
 
