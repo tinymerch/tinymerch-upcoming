@@ -69,7 +69,7 @@ p {
 
 .content p {
   width: 50%;
-  max-width: 750px;
+  max-width: 800px;
 }
 
 .MailChimp_Form {
@@ -79,6 +79,12 @@ p {
   width: 100%;
 }
 
+
+@media (max-width: 900px) {
+  .hide-mobile {
+    display: none;
+  }
+}
 @media (max-width: 900px) {
   h1 {
     font-size: 34px;
